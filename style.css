@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    background-size: cover;
+    background: #333 no-repeat;
+}
+.main {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255, 0.7);
+    padding: 2rem 3rem 3rem;
+    box-shadow: 3px 3px 3px grey;
+    width: 700px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+h2{
+    font-style: italic;
+    font-weight: 200;
+}
+#joke {
+    font-size: 2rem;
+}
+button {
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    padding: 1rem 2rem;
+    background: rgba(255,255,255, 0.3);
+    border: 1px solid #333;
+    outline: none;
+    box-shadow: 0 0 5px #333;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+button:hover {
+    color: #333;
+    background: #09FBBA;
+    transform: scale(1.02);
+}
+button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        max-width: 170px;
+        height: 100vh;
+        padding-top: 15rem;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    #joke {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+        max-width: 680px;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    #joke {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
